@@ -11,7 +11,7 @@ import numpy as np
 import time
 from PIL import Image
 
-im = Image.open('icon4.png')
+im = Image.open('icon.png')
 st.set_page_config(page_title="Customer Churn Prediction App",page_icon=im)
 html_temp = """
     <div style="background-color:#f63350 ;padding:10px">
