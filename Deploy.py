@@ -139,13 +139,13 @@ def main():
                 predicted_class, predicted_probability = classify_churn(CustomerId, CreditScore, Geography, Gender, Age, Balance,                                                                                   IsActiveMember, EstimatedSalary)
                 if predicted_class is not None and predicted_probability is not None:
                     if predicted_class == 1:
-                        st.success('Customer likely to churn😒📉')
+                        st.success('Customer likely to churn😒')
                         st.info(f"Predicted Probability: {predicted_probability:.2f}")
                         time.sleep(.5)
                         st.empty() 
 
                     else:
-                        st.success('Customer unlikely to churn😄📈')
+                        st.success('Customer unlikely to churn😄')
                         st.info(f"Predicted Probability: {1 - predicted_probability:.2f}")
                         time.sleep(.5)
                         st.empty()
